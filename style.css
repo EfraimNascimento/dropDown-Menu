@@ -2,11 +2,12 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 body{
     position: relative;
-    background-color: #36D1DC;
+    background-color: #000;
     width: 100%;
     height: 100%;
 }
@@ -15,8 +16,9 @@ body{
     position: absolute;
     top: 0;
     display: flex;
+    flex-direction: row;
     align-items: center;
-    background-color: #5B86E5;
+    background-color: #272727;
     box-shadow: 0rem .1rem .5rem rgba(0, 0, 0, 0.5);
     z-index: 100;
     width: 100%;
@@ -36,7 +38,11 @@ ul{
 }
 
 .itens:hover{
-    color: #1CD8D2;
+    color: #999999;
+}
+
+.clicked{
+    color: #999999;
 }
 
 li i{
@@ -49,14 +55,14 @@ li i{
     opacity: 0;
     width: 20vh;
     height: 20vh;
-    background-color: #5B86E5;
+    background-color: #484848;
     z-index: 90;
     box-shadow: 0rem .5rem .5rem rgba(0, 0, 0, 0.5);
 }
 
 .actived{
-    animation: dropDown 1s forwards;
-    transition: all 1s ease-in-out ;
+    animation: dropDown 0.5s forwards;
+    transition: all 0.5s ease-in-out ;
 }
 
 @keyframes dropDown{
@@ -79,5 +85,5 @@ li i{
 }
 
 .itens-drop:hover{
-  color: #1CD8D2;
+  color: #272727;
 }
